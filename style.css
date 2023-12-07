@@ -1,0 +1,1157 @@
+body,
+html {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #F5F5F5;
+    font-family: Circular Std, sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    flex-shrink: 1;
+}
+
+button:active {
+    transform: scale(0.9)
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5% 0 5%;
+    margin-bottom: 3.2rem;
+}
+
+nav img {
+    width: 85%;
+    height: auto;
+}
+
+.navlinks {}
+
+.navlinks a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    padding: 0.8125rem 2.125rem;
+    border-radius: 0.625rem;
+    margin-nline: 1.73rem;
+}
+
+.navlinks a:hover {
+    background: #1D3D33;
+    transition: all 250ms;
+    color: white;
+}
+
+.navlinks a:nth-child(5) {
+    border-radius: 0.625rem;
+    background: #1D3D33;
+    color: white;
+    padding: 0.8125rem 2.125rem;
+}
+
+.topheader {
+    padding: 0 5% 0 5%;
+    width: 100%;
+    height: 41rem;
+    position: relative;
+    z-index: 1;
+}
+
+.topheader h1 {
+    color: #000;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 5.1rem;
+    width: 50%;
+    letter-spacing: -0.10375rem;
+    margin-bottom: 2rem;
+}
+
+.topheader p {
+    color: #4A4A4A;
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 450;
+    width: 50%;
+    line-height: 150%;
+    /* 3.28125rem */
+    margin-bottom: 3rem;
+}
+
+.topheader a {
+    color: #FFF;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    display: inline-flex;
+    padding: 0.9rem 2.2rem;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.625rem;
+    background: #1D3D33;
+    text-decoration: none;
+}
+
+.topheader a:hover {
+    filter: brightness(2);
+    transition: all 250ms;
+}
+
+.topheader a:active {
+    transform: scale(0.92)
+}
+
+.topheader section {
+    width: 100%;
+    height: 15rem;
+    position: absolute;
+    background: linear-gradient(180deg, #EBD8CE 0%, #F5E6DF 100%);
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.topheader .bottlesimg {
+    position: absolute;
+    top: 3.5vmax;
+    right: 6vmax;
+    width: 45%;
+    height: auto;
+}
+
+.statsbar {
+    width: 100%;
+    height: 12rem;
+    background: #09261D;
+    color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.statstxt {
+    color: #FFF;
+    font-size: 2rem;
+    width: 40%;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 2.6rem;
+    margin-left: 5%;
+    margin-right: 20%;
+}
+
+.stats__col {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 0.375rem;
+    width: 15%;
+}
+
+.stats__col h4 {
+    color: #FFF;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+
+}
+
+.stats__col figure img {
+    color: #FFF;
+    font-family: Circular Std;
+    font-size: 5.3125rem;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+}
+
+.stats__col p {
+    width: 70%;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.3vmax;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 1.8rem;
+}
+
+.cardcontainer {
+    display: flex;
+    margin-bottom: 2rem;
+    padding-inline: 10%;
+    gap: 2.5%;
+    position: relative;
+}
+
+.cardheader h2 {
+    text-align: center;
+}
+
+.cardheader h2 {
+    color: #000;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 150%;
+    /* 5.15625rem */
+    margin-bottom: 2rem;
+}
+
+.cards {
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgb(226, 220, 220);
+    padding-bottom: 1rem;
+}
+
+.cards:hover {
+    filter: brightness(1.25);
+    transition: all 250ms;
+}
+
+.cards img {
+    width: 100%;
+}
+
+.cards h3 {
+    color: #000;
+    text-align: left;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%;
+    /* 2.875rem */
+}
+
+.cards p {
+    color: #4A4A4A;
+    font-family: Work Sans;
+    font-size: 1vmax;
+    font-style: normal;
+    font-weight: 400;
+    width: 50%;
+    line-height: 1rem;
+    /* 1.07813rem */
+    text-align: left;
+}
+
+.cards--flexrow {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.cards--flexrow button {
+    color: #F6F6F6;
+    text-align: center;
+    font-size: 1.1vmax;
+    font-style: normal;
+    font-weight: 450;
+    border: 0;
+    border-radius: 0.5rem;
+    background: #1D3D33;
+    display: flex;
+    padding: 0.625rem 0.9375rem;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.cards--flexrow p {
+    text-align: right;
+    color: #000;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 115%;
+    /* 2.15625rem */
+}
+
+.cardsarrow {
+    position: absolute;
+    display: flex;
+    width: 1.875rem;
+    height: 1.875rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #F1E0D7;
+    border-radius: 50%;
+    right: 4%;
+    top: 35%;
+    border: 0;
+}
+
+.cardViewAll {
+    color: #4A4A4A;
+    text-align: center;
+    font-size: 2.3vmax;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 115%;
+    /* 2.3rem */
+    width: 8%;
+    margin-inline: 46%;
+    padding-bottom: 5px;
+    border-top: 0;
+    border-inline: 0;
+    border-bottom: 4px solid black;
+    margin-bottom: 5rem;
+}
+
+.boxgroup {
+    margin-bottom: 4rem;
+}
+
+.boxgroup h3 {
+    text-align: center;
+    color: #000;
+    font-size: 3.4375rem;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 150%;
+    /* 5.15625rem */
+}
+
+.boxgroup p {
+    color: #4A4A4A;
+    text-align: center;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 115%;
+    /* 1.79688rem */
+    width: 49%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.boxcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    padding-nline: 10%;
+}
+
+.boxcontainer figure {
+    display: inline-flex;
+    padding: 3rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    background: #FFF;
+}
+
+.boxcontainer figure img {
+    height: 4rem;
+    width: auto;
+}
+
+.boxcontainer figure p {
+    margin: 0;
+    width: 100%;
+}
+
+.ladyrow {
+    width: 100%;
+    height: 36.1875rem;
+    flex-shrink: 0;
+    background: #09261D;
+    padding-inline: 8%;
+    display: flex;
+    color: #F5F5F5;
+}
+
+.col1 {
+    width: 50%;
+}
+
+.col1 .ellipse1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36.1875rem;
+    height: 36.1875rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 49px solid #EFDED5;
+    position: relative;
+}
+
+.col1 .ellipse2 {
+    width: 24rem;
+    height: 24rem;
+    flex-shrink: 0;
+    border-radius: 38.9375rem;
+    background-color: #EFDED5;
+
+}
+
+.col1 img {
+    position: absolute;
+    bottom: -49px;
+    left: -11.5rem;
+    width: 140%;
+    height: auto
+}
+
+.ladyrow figcaption {
+    width: 50%;
+    position: relative;
+    padding: 5rem 5% 0 2%;
+}
+
+.ladyquotemarks {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 9.375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 9rem;
+    position: absolute;
+}
+
+.ladyrow figcaption h4 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 5rem 0 2rem 5rem;
+    width: 100%;
+}
+
+.ladyrow figcaption p:nth-child(3) {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 115%;
+    /* 1.79688rem */
+    margin-left: 5rem;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.ladyrow figcaption p:nth-child(4) {
+    margin-left: 5rem;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 3rem */
+    width: 100%;
+}
+
+.newscan {
+    text-align: center;
+    padding: 4rem 0 6rem 0;
+    min-height: 50vh;
+}
+
+.newscan h3 {
+    color: #000;
+    font-size: 3.4375rem;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 150%;
+    /* 5.15625rem */
+}
+
+.newscan p {
+    color: #2F2F2F;
+    font-family: Poppins;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%;
+    /* 1.79688rem */
+    margin-bottom: 3rem;
+}
+
+.newscan form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    width: 100%;
+}
+
+.newscan form input {
+    border-radius: 0.25rem;
+    background: #FFF;
+    box-shadow: 2px 20px 55px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    width: 33.75rem;
+    padding: 1.4375rem 1.25rem;
+    align-items: center;
+    gap: 0.625rem;
+    font-size: 1.8rem;
+    border: 0;
+}
+
+.newscan form input:hover {
+    outline: 1px solid #29BD38;
+    transition: all 250ms;
+}
+
+.newscan form button {
+    display: inline-flex;
+    padding: 1.4375rem 2.3125rem;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.25rem;
+    background: #29BD38;
+    color: #F5F5F5;
+    box-shadow: 2px 20px 55px 0px rgba(0, 0, 0, 0.15);
+    font-size: 1.8rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.newscan form button:hover {
+    filter: brightness(2);
+    transition: all 250ms;
+}
+
+footer {
+    width: 100%;
+    height: 50vh;
+    background: #EEDDD4;
+    padding: 3rem 6rem;
+    display: flex;
+    gap: 5rem;
+}
+
+.footer__col1 {
+    width: 33.3%;
+    color: #2F2F2F;
+    font-family: Poppins;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 1.79688rem */
+}
+
+.footer__col1__logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.footer__col1__logos a {
+    background-color: #1D3D33;
+    padding: 1rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__col1__logos a:hover {
+    background-color: black;
+    transition: all 350ms;
+}
+
+.footer__col2 {
+    width: 33.3%;
+}
+
+.footer__col2 h5,
+.footer__col3 h5 {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+
+.footer__col2__links {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0rem 0.1875rem;
+    align-items: flex-start;
+    gap: 1.5625rem;
+    width: 100%;
+    height: 80%;
+}
+
+.footer__col2 a {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: lighter;
+    line-heght: 2rem;
+    text-decoration: none;
+}
+
+.footer__col2 a:hover {
+    text-decoration: underline;
+    transition: all 350ms;
+}
+
+.footer__col3 {
+    width: 33.3%;
+    padding-left: 2rem;
+}
+
+.footer__col3 a,
+.footer__col3 p {
+    text-decoration: none;
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 2rem;
+}
+
+
+
+@media (max-width: 1024px) {
+
+    body,
+    html {
+        padding: 0;
+        paddng: 0 3% 0 3%;
+    }
+
+    * {}
+
+    nav {
+        justify-content: center;
+        margin-bottom: 1rem;
+        padding-top: 0.6rem;
+        backgrund-color: #b3e5c7;
+    }
+
+    .nav__logo {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav img {
+        width: 35%;
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+    .topheader {
+        position: relative;
+        margin: 0;
+        padding: 0 5% 4rem 5%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .topheader .bottlesimg {
+        position: relative;
+        order: -3;
+        top: 0;
+        right: 0;
+        margin-bottom: 1.7rem;
+        width: 100%;
+        height: auto;
+    }
+
+
+    .topheader h1 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        width: 90%;
+        letter-spacing: 0.1rem;
+        margin-bottom: 0.8rem;
+        margin-inline: auto;
+    }
+
+    .topheader p {
+        font-size: 1.1rem;
+        width: 87%;
+        line-height: 1.4rem;
+        /* 3.28125rem */
+        margin-bottom: 1.5rem;
+        margin-inline: auto;
+    }
+
+    .topheader a {
+        font-size: 1.4rem;
+        padding: 1.4375rem 1.2rem;
+        gap: 0.625rem;
+        justify-content: center;
+        height: 4rem;
+        margin-bottom: 0;
+        border-radius: 0.3rem;
+    }
+
+    .topheader section {
+        width: 80vw;
+        height: 80vw;
+        top: 0;
+        left: 10vw;
+        right: 10vw;
+        border-radius: 50%;
+    }
+
+
+    .statsbar {
+        width: 100%;
+        height: 35rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding-inline: 5%;
+        gap: 2rem;
+    }
+
+    .statstxt {
+        font-size: 1.6rem;
+        width: 100%;
+        line-height: 2rem;
+        margin: 0;
+    }
+
+    .stats__col {
+        flex-direction: column;
+        gap: 0.3rem;
+        width: 55%;
+    }
+
+    .stats__col h4 {
+        font-size: 4rem;
+    }
+
+    .stats__col figure img {
+        width: 2rem;
+        height: auto;
+    }
+
+    .stats__col p {
+        width: 100%;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 1rem;
+        line-height: 1.1rem;
+    }
+
+    .cardheader h2 {
+        font-size: 2rem;
+        line-height: 150%;
+        margin-bottom: 2rem;
+    }
+
+    .cardcontainer {
+        flex-direction: column;
+        margin-bottom: 2rem;
+        padding-inline: 7%;
+        gap: 3rem;
+    }
+
+    .cards {
+        border-radius: 8px;
+    }
+
+    .cards h3 {
+        font-size: 1.8rem;
+        margin: 0.5rem 1rem 0.1rem 1rem;
+    }
+
+    .cards p {
+        font-size: 1.1rem;
+        width: 90%;
+        line-height: 1rem;
+        margin-inline: 1rem;
+    }
+
+    .cards--flexrow {
+        margin-top: 1.3rem;
+        margin-inline: 1rem;
+    }
+
+    .cards--flexrow button {
+        font-size: 1rem;
+        display: flex;
+        min-width: 7rem;
+        height: 3rem;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .cards--flexrow p {
+        font-size: 1.6rem;
+        margin: 0;
+    }
+
+    .cardsarrow {
+        display: none;
+    }
+
+    .cardViewAll {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+        width: 30%;
+        height: 2.8rem;
+        margin-inline: 35%;
+        padding: 0;
+        border: 2px solid #1D3D33;
+        margin-bottom: 5rem;
+
+    }
+
+    .boxgroup {
+        margin-bottom: 4rem;
+    }
+
+    .boxgroup h3 {
+        font-size: 2rem;
+        line-height: 2.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .boxgroup p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 4.5rem;
+    }
+
+    .boxcontainer {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        padding-inline: 7%;
+        margin-bottom: 5rem;
+    }
+
+    .ladyrow {
+        height: auto;
+        padding-inline: 7%;
+        display: flex;
+    }
+
+    .col1 {
+        width: 100%;
+    }
+
+    .col1 .ellipse1 {
+        width: auto;
+        height: auto;
+        border: none;
+        position: relative;
+    }
+
+    .col1 .ellipse2 {
+        display: none;
+    }
+
+    .col1 img {
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        border: 3px solid rgb(63, 214, 109);
+    }
+
+    .ladyrow figcaption {
+        min-width: 100%;
+        position: relative;
+        padding: 5rem 5% 0 2%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ladyquotemarks {
+        font-size: 8rem;
+        line-height: 0rem;
+        position: relative;
+        margin-top: 9rem;
+    }
+
+    .ladyrow figcaption h4 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin: 0.4rem 0 1rem 0;
+        width: 100%;
+    }
+
+    .ladyrow figcaption p:nth-child(3) {
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+        margin: 0 0 4rem 0;
+    }
+
+    .ladyrow figcaption p:nth-child(4) {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 5.65rem;
+        left: 1rem;
+    }
+
+    .newscan {
+        text-align: center;
+        padding: 4rem 0 6rem 0;
+        height: auto;
+    }
+
+    .newscan h3 {
+        font-size: 2.5rem;
+    }
+
+    .newscan p {
+        font-size: 1.3rem;
+    }
+
+    .newscan form {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .newscan form input {
+        border-radius: 0.25rem;
+        background: #FFF;
+        box-shadow: 2px 20px 55px 0px rgba(0, 0, 0, 0.15);
+        display: flex;
+        width: 90%;
+        padding: 1.4375rem 1.25rem;
+        align-items: center;
+        gap: 0.625rem;
+        font-size: 1.3rem;
+        border: 0;
+    }
+
+    .newscan form input:hover {
+        outline: 1px solid #29BD38;
+        transition: all 250ms;
+    }
+
+    .newscan form button {
+        display: inline-flex;
+        padding: 1.4375rem 1.2rem;
+        align-items: center;
+        gap: 0.625rem;
+        font-size: 1.3rem;
+        width: 90%;
+    }
+
+    .newscan form button:hover {
+        filter: brightness(2);
+        transition: all 250ms;
+    }
+
+    footer {
+        width: 86%;
+        height: auto;
+        margin: 0 7% 4rem 7%;
+        position: relative;
+        padding: 0.5rem 1.3rem 9rem 1.3rem;
+        flex-direction: column;
+        gap: 0;
+
+    }
+
+    .footer__col1 {
+        width: 100%;
+    }
+
+    .footer__col1 img {
+        width: 100%;
+    }
+
+    .footer__col1 p {
+        display: none;
+    }
+
+    .footer__col1__logos {
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        gap: 1rem;
+    }
+
+    .footer__col1__logos a {
+        padding: 0.6rem;
+    }
+
+    .footer__col2 {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer__col2 h5,
+    .footer__col3 h5 {
+        font-size: 1.5rem;
+        line-height: normal;
+        margin-bottom: 1rem;
+    }
+
+    .footer__col2__links {
+        gap: 0;
+        width: 100%;
+    }
+
+    .footer__col2 a {
+        font-size: 1.25rem;
+        line-heght: 2rem;
+    }
+
+    .footer__col3 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer__col3 a,
+    .footer__col3 p {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        margin-top: 0.6rem;
+    }
+}
+
+
+@media (max-width: 1024px) and (min-width: 700px) {
+    nav img {
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        max-width: 200px;
+    }
+
+    .topheader .bottlesimg {
+        margin-bottom: 6rem;
+        max-width: 450px;
+        margin-inline: auto;
+    }
+
+    .topheader section {
+        max-width: 450px;
+        max-height: 450px;
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, 0%);
+    }
+
+    .topheader h1 {
+        font-size: 1.9rem;
+    }
+
+    .topheader p {
+        font-size: 1.15rem;
+        width: 90%;
+        margin-bottom: 4rem;
+    }
+
+    .topheader a {
+        font-size: 1.5rem;
+        padding: 1rem 1.2rem;
+        height: 5rem;
+        margin-bottom: 4rem;
+    }
+
+    .cardcontainer {
+        flex-flow: row wrap;
+        margin-bottom: 3rem;
+        padding-inline: 0;
+        padding-left: 5%;
+        gap: 5%;
+    }
+
+    .cards {
+        width: 45%;
+        margin-bottom: 3rem;
+    }
+
+    .cardViewAll {
+        font-size: 1.5rem;
+        height: 3.6rem;
+    }
+
+    .ladyrow figcaption p:nth-child(3) {
+        font-size: 1.2rem;
+    }
+
+    .ladyrow figcaption p:nth-child(4) {
+        font-size: 1.3rem;
+    }
+
+    .newscan p {
+        font-size: 1.4rem;
+    }
+
+    .newscan form {
+        flex-direction: row;
+        gap: 0;
+        padding-inline: 7%;
+    }
+
+    .newscan form input {
+        width: 63.5%;
+        margin-right: 3%;
+    }
+
+    .newscan form button {
+        width: 33.5%;
+    }
+
+    footer {
+        padding: 2rem 1.3rem 9rem 1.3rem;
+        flex-direction: row;
+        gap: 10%;
+
+    }
+
+    .footer__col1 {
+        width: 0%;
+    }
+
+    .footer__col2 {
+        width: 50%;
+    }
+
+    .footer__col2 h5,
+    .footer__col3 h5 {
+        font-size: 1.6rem;
+    }
+
+    .footer__col2__links {
+        flex-wrap: nowrap;
+    }
+}
