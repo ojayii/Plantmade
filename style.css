@@ -186,7 +186,7 @@ nav img {
     font-family: Poppins;
     font-size: 1.3vmax;
     font-style: normal;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 1.8rem;
 }
 
@@ -214,7 +214,6 @@ nav img {
 
 .cards {
     cursor: pointer;
-    box-shadow: 5px 5px 15px rgb(226, 220, 220);
     padding-bottom: 1rem;
 }
 
